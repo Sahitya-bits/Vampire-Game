@@ -41,7 +41,7 @@ Controls
 
 Credits
 
-- Developer: Sahitya
+- Developer: Sahitya Sharma
 - Graphics: Custom sprites and images.
 - Sound Effects: Gunshot, background music, and victory/loss sounds.
 
