@@ -4,12 +4,12 @@ win = pygame.display.set_mode((800,600))
 pygame.display.set_caption('VAMPIRE GAME : SCORE 10 AND YOU WIN !!')
 block_color = (20,97,66)
 clock = pygame.time.Clock()
-player_img = pygame.image.load("Project/images/player.png")
-enemy_img1 = [pygame.image.load("Project/images/enemies/bat/0.png"),pygame.image.load("Project/images/enemies/bat/1.png"),pygame.image.load("Project/images/enemies/bat/2.png"),pygame.image.load("Project/images/enemies/bat/3.png")]
-enemy_img2 = [pygame.image.load("Project/images/enemies/blob/0.png"),pygame.image.load("Project/images/enemies/blob/1.png"),pygame.image.load("Project/images/enemies/blob/2.png"),pygame.image.load("Project/images/enemies/blob/3.png")]
-gun_img = pygame.image.load("Project/images/gun.png")
-gunshot=pygame.mixer.Sound('gunshot.wav')
-pygame.mixer.music.load("music.mp3")
+player_img = pygame.image.load("Vampire-Game-main/images/player.png")
+enemy_img1 = [pygame.image.load("Vampire-Game-main/images/enemies/bat/0.png"),pygame.image.load("Vampire-Game-main/images/enemies/bat/1.png"),pygame.image.load("Vampire-Game-main/images/enemies/bat/2.png"),pygame.image.load("Vampire-Game-main/images/enemies/bat/3.png")]
+enemy_img2 = [pygame.image.load("Vampire-Game-main/images/enemies/blob/0.png"),pygame.image.load("Vampire-Game-main/images/enemies/blob/1.png"),pygame.image.load("Vampire-Game-main/images/enemies/blob/2.png"),pygame.image.load("Vampire-Game-main/images/enemies/blob/3.png")]
+gun_img = pygame.image.load("Vampire-Game-main/images/gun.png")
+gunshot=pygame.mixer.Sound('Vampire-Game-main/gunshot.wav')
+pygame.mixer.music.load("Vampire-Game-main/music.mp3")
 pygame.mixer.music.play()
 
 class Player():
@@ -243,13 +243,13 @@ while True:
     pygame.display.update()
     if collide == True:
         pygame.mixer.music.stop()
-        pygame.mixer.music.load('lost.mp3')
+        pygame.mixer.music.load('Vampire-Game-main/lost.mp3')
         pygame.mixer.music.play()
         time.sleep(1)
         pygame.quit()
     if score == 10:
         pygame.mixer.music.stop()
-        pygame.mixer.music.load('victory.mp3')
+        pygame.mixer.music.load('Vampire-Game-main/victory.mp3')
         pygame.mixer.music.play()
         time.sleep(2)
         pygame.quit()
